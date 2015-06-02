@@ -4,6 +4,18 @@
 //jQuery
 $( document ).ready(function() {
 
+
+  var bgArray = ["https://thelosthighwayhotel.files.wordpress.com/2014/12/blade-runner1.jpg",
+                "https://cdn3.vox-cdn.com/thumbor/H-AnYgEABhVEWsyskHV5YnvOS-c=/59x0:1317x708/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/46016124/madmax.0.0.png",
+                "http://images.mentalfloss.com/sites/default/files/pulpfiction.jpeg",
+                "http://i.ytimg.com/vi/nAfKFy9ZgHQ/maxresdefault.jpg",
+                "http://ecx.images-amazon.com/images/I/91-lvufbTjL._SL1500_.jpg",
+                "https://chrisandelizabethwatchmovies.files.wordpress.com/2013/07/mdy45zlygl.jpg",
+                "http://www.wearethemighty.com/wp-content/uploads/2015/03/Need_for_speed1.jpg",
+                "http://wallpoper.com/images/00/26/83/41/paprika_00268341.jpg"];
+  var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
+  $('body').css({'background-image': 'url(' + bg + ')'});
+
   $('.clockpicker').clockpicker();
 
   var select = '';
