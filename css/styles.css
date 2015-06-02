@@ -1,9 +1,33 @@
+body {
+  background: url("https://thelosthighwayhotel.files.wordpress.com/2014/12/blade-runner1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .stretch {
   width: 100%;
+}
+
+#purchased-tickets-panel {
+  display: none;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }
 
 #ticket-price {
   display: none;
   font-size: 4em;
   text-align: center;
+}
+
+#go-button {
+  display: none;
 }
