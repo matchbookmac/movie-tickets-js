@@ -1,4 +1,9 @@
-#jqtest {
-  background-color: black;
-  color: white;
+.stretch {
+  width: 100%;
+}
+
+#ticket-price {
+  display: none;
+  font-size: 4em;
+  text-align: center;
 }
