@@ -50,7 +50,7 @@ $( document ).ready(function() {
       $("table#purchased-tickets").append('<tr>' + '<td>' + title + '</td>' + '<td>' + time.join(":") + '</td>' + '<td>$' + ticket.price() + '</td>' + '</tr>');
       clearForms();
       updatePrice();
-      $("#purchased-tickets-panel").fadeIn("slow");
+      $("#purchased-tickets-table").slideDown("slow");
     } else {
 
     }
