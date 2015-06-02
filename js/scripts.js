@@ -26,13 +26,13 @@ $( document ).ready(function() {
     var time = $("input#time").val().split(':');
     var age = $("select#age").val();
     if(title.trim() != "" && age != "Select an Age") {
-      $("#ticket-price").slideToggle("slow");
+      $("#ticket-price").slideDown("slow");
       $("#no-button").hide();
       $("#go-button").show();
       var ticket = new Ticket(title, new Date(2015, 1, 1, parseInt(time[0]), parseInt(time[1])), parseInt(age));
       $("#ticket-price").html("Cost: $" + ticket.price());
     } else {
-      $("#ticket-price").slideToggle("slow");
+      $("#ticket-price").slideUp("slow");
       $("#go-button").hide();
       $("#no-button").show();
     }
@@ -50,7 +50,7 @@ $( document ).ready(function() {
       $("table#purchased-tickets").append('<tr>' + '<td>' + title + '</td>' + '<td>' + time.join(":") + '</td>' + '<td>$' + ticket.price() + '</td>' + '</tr>');
       clearForms();
       updatePrice();
-      $("#purchased-tickets-panel").show();
+      $("#purchased-tickets-panel").fadeIn("slow");
     } else {
 
     }
